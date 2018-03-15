@@ -1,0 +1,14 @@
+/**
+ * @overview Animation config variables
+ */
+
+:root {
+  /* Transition defaults */
+  --transition-background-color: background-color 0.15s ease-out;
+  --transition-border: border-color 0.15s ease-out;
+  --transition-fill: fill 0.15s ease-out;
+  --transition-opacity: opacity 0.15s ease-out;
+  --transition-text: color 0.15s ease-out;
+  --transition-transform: transform 0.3s ease-out;
+  --transition-transform-sin-ease: transform 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}

@@ -1,0 +1,102 @@
+@import 'config/common.css';
+/* @import 'helpers/fonts.css';
+@import 'helpers/typography.css'; */
+
+.intro-section {
+  composes: section from 'components/sections.css';
+}
+
+.thumbnails-section {
+  composes: section--example from 'components/sections.css';
+}
+
+.title {
+  composes: section-title from 'components/sections.css';
+}
+
+.description {
+  composes: section-description from 'components/sections.css';
+}
+
+.example-section {
+  composes: section--example from 'components/sections.css';
+}
+
+.example-section-title {
+  composes: section-title--example from 'components/sections.css';
+}
+
+.example {
+  margin-bottom: var(--size-9);
+  
+  &:first-letter {
+    text-transform: uppercase;
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.example-specimen {
+  margin-bottom: var(--size-3);
+}
+
+.h1 {
+  composes: heading-1 from 'helpers/typography.css';
+  composes: example-specimen;
+}
+
+.h2 {
+  composes: heading-2 from 'helpers/typography.css';
+  composes: example-specimen;
+}
+
+.h3 {
+  composes: heading-3 from 'helpers/typography.css';
+  composes: example-specimen;
+}
+
+.h4 {
+  composes: heading-4 from 'helpers/typography.css';
+  composes: example-specimen;
+}
+
+.h5 {
+  composes: heading-5 from 'helpers/typography.css';
+  composes: example-specimen;
+}
+
+.h6 {
+  composes: heading-6 from 'helpers/typography.css';
+  composes: example-specimen;
+}
+
+.body-1 {
+  composes: body-1 from 'helpers/typography.css';
+  composes: example-specimen;
+}
+
+.body-2 {
+  composes: body-2 from 'helpers/typography.css';
+  composes: example-specimen;
+}
+
+.p {
+  composes: example-specimen;
+}
+
+.link {
+  composes: link from 'helpers/typography.css';
+  composes: example-specimen;
+}
+
+.link-underline {
+  composes: link-underline from 'helpers/typography.css';
+  composes: example-specimen;
+}
+
+.link-underline-gray {
+  composes: link-underline-gray from 'helpers/typography.css';
+  composes: example-specimen;
+}

@@ -1,0 +1,7 @@
+.helper-label {
+  composes: helper-label from 'components/helper-label.css';
+}
+
+.helper-label-text {
+  composes: helper-label-text from 'components/helper-label.css';
+}

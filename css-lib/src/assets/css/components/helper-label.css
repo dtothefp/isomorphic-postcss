@@ -1,0 +1,10 @@
+@import "config/common.css";
+
+.helper-label {
+  font-family: Courier, monospace;
+  font-size: var(--font-1);
+}
+
+.helper-label-text {
+  cursor: pointer;
+}

@@ -1,0 +1,70 @@
+/**
+ * @overview Value Prop base styles
+ */
+
+@import 'config/common.css';
+
+.container {
+  position: relative;
+
+  @media (--large-up) {
+    min-height: 32rem;
+  }
+}
+
+.container--padding-bottom {
+  padding-bottom: var(--size-12);
+
+  @media (--medium) {
+    padding-bottom: var(--size-13);
+  }
+
+  @media (--large) {
+    padding-bottom: var(--size-14);
+  }
+
+  @media (--large-up) {
+    min-height: calc(32rem + var(--size-14));
+  }
+
+  @media (--wide-up) {
+    padding-bottom: var(--size-15);
+  }
+}
+
+.content-container {
+  composes: page-section-large from 'helpers/layout.css';
+  padding-bottom: 0;
+}
+
+.content-inner {
+  composes: margin-auto from 'helpers/layout.css';
+  max-width: var(--width-content-max);
+}
+
+.content {
+  composes: text-center-small-medium from 'helpers/typography.css';
+  max-width: 32rem;
+
+  @media (--medium-down) {
+    margin-bottom: var(--size-11);
+  }
+}
+
+.heading {
+  composes: heading-3 from 'helpers/typography.css';
+}
+
+.body {
+  composes: body-1 from 'helpers/typography.css';
+}
+
+.image-container {
+  composes: margin-auto from 'helpers/layout.css';
+  display: flex;
+  flex-direction: column;
+
+  @media (--medium-down) {
+    align-items: center;
+  }
+}

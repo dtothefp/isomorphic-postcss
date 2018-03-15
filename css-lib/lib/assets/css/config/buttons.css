@@ -1,0 +1,16 @@
+/**
+ * @overview Button config variables
+ */
+
+:root {
+  /* Button state colors */
+  --button-primary-active: #b3bdd8;
+  --button-primary-hover: #1a398b;
+  --button-secondary-active: #334f98;
+  --button-secondary-hover: #6fd3b5;
+  --button-accent-active: #faceca;
+  --button-accent-hover: #d55145;
+
+  /* Transitions */
+  --button-transition: background-color 0.15s ease-out, color 0.15s ease-out;
+}

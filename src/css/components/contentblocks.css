@@ -1,0 +1,63 @@
+@import 'config/common.css';
+
+.container {
+  composes: margin-auto from 'helpers/layout.css';
+  display: flex;
+
+  @media (--medium-down) {
+    flex-direction: column;
+    align-items: center;
+    max-width: 36.25rem;
+  }
+
+  @media (--large-up) {
+    justify-content: center;
+    max-width: var(--width-content-max);
+  }
+}
+
+.block {
+
+  &:not(:last-child) {
+    @media (--small-down) {
+      margin-bottom: var(--size-12);
+    }
+
+    @media (--medium) {
+      margin-bottom: var(--size-13);
+    }
+  }
+}
+
+.paragraph {
+  margin-bottom: 0;
+}
+
+.image-container {
+  composes: margin-auto from 'helpers/layout.css';
+  flex-shrink: 0;
+  width: 100%;
+  margin-bottom: var(--size-9);
+  text-align: center;
+
+  @media (--medium) {
+    margin-bottom: 0;
+  }
+
+  @media (--large-up) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+
+.image {
+  @media (--large-up) {
+    flex: none;
+  }
+}
+
+.heading {
+  composes: heading-4 from 'helpers/typography.css';
+  color: var(--color-white);
+}

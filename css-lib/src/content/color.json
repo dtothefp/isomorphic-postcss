@@ -1,0 +1,106 @@
+{
+  "title": "Colors",
+  "description": "This color palette comprises primary, secondary and accent colors used within Casper’s digital ecosystem. They’ve been designed to work harmoniously with each other. The color palette starts with primary colors and fills in the spectrum to create a complete and usable palette.",
+  "swatches": {
+    "primary": [
+      [
+        {
+          "name": "Primary Blue",
+          "hex": "00237E",
+          "variable": "color-primary",
+          "dark": "true"
+        },
+        {
+          "name": "Primary Blue Tint 1",
+          "hex": "031F6A",
+          "variable": "color-primary-1",
+          "dark": "true"
+        },
+        {
+          "name": "Primary Blue Tint 2",
+          "hex": "071A53",
+          "variable": "color-primary-2",
+          "dark": "true"
+        }
+      ],
+      [
+        {
+          "name": "Light Blue",
+          "hex": "D7ECF7",
+          "variable": "color-light-blue-new"
+        },
+        {
+          "name": "Light Blue Tint 1",
+          "hex": "A5CDE9",
+          "variable": "color-light-blue-refresh"
+        },
+        {
+          "name": "Light Blue Tint 2",
+          "hex": "8FC0E4",
+          "variable": "--color-light-blue-new-2"
+        }
+      ],
+      [
+        {
+          "name": "Dark Gray",
+          "hex": "505050",
+          "variable": "color-gray",
+          "dark": "true"
+        },
+        {
+          "name": "Medium Gray",
+          "hex": "A8A8A8",
+          "variable": "color-gray-3"
+        },
+        {
+          "name": "Light Gray",
+          "hex": "E5E5E5",
+          "variable": "color-gray-7"
+        }
+      ],
+      [
+        {
+          "name": "Background Gray",
+          "hex": "F6F6F6",
+          "variable": "color-background-light",
+          "border": "true"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF",
+          "variable": "color-white",
+          "border": "true"
+        }
+      ]
+    ],
+    "secondary": [
+      [
+        {
+          "name": "Mint",
+          "hex": "EDF9FA",
+          "variable": "color-light-blue-2"
+        },
+        {
+          "name": "Mint Tint 1",
+          "hex": "DCF4F6",
+          "variable": "color-light-blue-1"
+        },
+        {
+          "name": "Mint Tint 2",
+          "hex": "CAEFF2",
+          "variable": "color-light-blue"
+        }
+      ]
+    ],
+    "accent": [
+      [
+        {
+          "name": "Red",
+          "hex": "ED5A4D",
+          "variable": "color-accent",
+          "dark": "true"
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+/**
+ * @overview z-index config
+ */
+
+:root {
+  /* Nav and subnav */
+  --z-index-subnav: 100;
+  --z-index-nav-drawer: 101;
+  --z-index-nav: 103;
+  --z-index-mobile-nav: 104;
+  --z-index-cart-overlay: 105;
+  --z-index-cart-container: 106;
+
+  /* Props */
+  --z-index-modal-overlay: var(--z-index-cart-overlay);
+  --z-index-modal-container: 107;
+}

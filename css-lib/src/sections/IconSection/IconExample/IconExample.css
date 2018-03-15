@@ -1,0 +1,26 @@
+@import 'config/common.css';
+
+.container {
+  width: 6rem;
+  padding: var(--size-3);
+  margin: var(--size-3);
+  text-align: center;
+  border-radius: var(--radius-2);
+  cursor: pointer;
+
+  &:hover {
+    background: var(--color-background-dark);
+  }
+}
+
+.icon {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.label {
+  composes: helper-label from 'components/helper-label.css';
+  margin-top: var(--size-4);
+  font-size: var(--font-1);
+  word-wrap: break-word;
+}

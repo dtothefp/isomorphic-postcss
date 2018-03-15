@@ -1,0 +1,48 @@
+/**
+ * @overview Web font helper classes
+ * @note These must be globals for font loading to work correctly
+ */
+
+@import 'config/common.css';
+
+.calibre-light {
+  font-style: normal;
+  font-weight: 300;
+  font-family: var(--sans-stack);
+
+  [data-fonts-1="true"] & {
+    font-family: var(--calibre-light);
+  }
+}
+
+.calibre-regular {
+  font-style: normal;
+  font-weight: 400;
+  font-family: var(--sans-stack);
+
+  [data-fonts-1="true"] & {
+    font-weight: 600; /* Fake regular weight until Calibre Regular is loaded */
+    font-family: var(--calibre-light);
+  }
+
+  [data-fonts-2="true"] & {
+    font-weight: 400;
+    font-family: var(--calibre-regular);
+  }
+}
+
+.calibre-medium {
+  font-style: normal;
+  font-weight: 500;
+  font-family: var(--sans-stack);
+
+  [data-fonts-1="true"] & {
+    font-weight: 700; /* Fake medium weight until Calibre Medium is loaded */
+    font-family: var(--calibre-light);
+  }
+
+  [data-fonts-2="true"] & {
+    font-weight: 500;
+    font-family: var(--calibre-medium);
+  }
+}

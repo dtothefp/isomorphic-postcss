@@ -1,0 +1,172 @@
+/**
+ * @overview Defaults and CSS resets
+ */
+
+html {
+  box-sizing: border-box;
+  font-size: var(--base-font-size);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-style: normal;
+  font-weight: 300;
+  font-size: var(--font-default);
+  font-family: var(--sans-stack);
+  line-height: var(--base-line-height);
+  letter-spacing: var(--base-tracking);
+  color: var(--color-text);
+  background: var(--color-background);
+
+  [data-fonts-1="true"] & {
+    font-family: var(--calibre-light);
+  }
+}
+
+html,
+body,
+.app {
+  height: 100%;
+}
+
+strong {
+  font-weight: 400;
+
+  [data-fonts-1="true"] & {
+    font-weight: 600; /* Fake regular weight until Calibre Regular is loaded */
+  }
+
+  [data-fonts-2="true"] & {
+    font-weight: 400;
+    font-family: var(--calibre-regular);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: var(--size-default);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: var(--size-default);
+}
+
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+blockquote {
+  margin: 0 0 var(--size-default);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+figure {
+  margin: 0;
+}
+
+iframe,
+img,
+svg,
+video {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+button,
+input,
+textarea {
+  padding: 0;
+  border: 0;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+button,
+[role="button"],
+input[type="radio"],
+input[type="submit"] {
+  cursor: pointer;
+
+  &[disabled] {
+    cursor: default;
+  }
+}
+
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+textarea {
+  touch-action: manipulation; /* Remove 300ms click delay */
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+input,
+textarea {
+  font-size: var(--font-default);
+  letter-spacing: var(--base-tracking);
+  box-shadow: none;
+}
+
+button {
+  border-radius: 0; /* Chrome 62 introduces default border-radius */
+}
+
+textarea {
+  resize: vertical; /* Only allow vertical resize of textareas */
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+}

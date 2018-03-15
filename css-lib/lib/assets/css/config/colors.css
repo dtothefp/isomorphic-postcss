@@ -1,0 +1,87 @@
+/**
+ * @overview Casper color palette variables
+ */
+
+:root {
+  /* Base colors */
+  --color-blue: #00237e;
+  --color-green: #7beac9;
+  --color-red: #ed5a4d;
+  --color-white: white;
+
+  /* Primary stack */
+  --color-primary: var(--color-blue);
+  --color-primary-1: #031f6a;
+  --color-primary-2: #071a53;
+  --color-primary-faded: rgba(0, 35, 126, 0.25);
+
+  /* Secondary stack */
+  --color-secondary: var(--color-green);
+  --color-secondary-1: #9ef0d8;
+  --color-secondary-2: #c6f6e8;
+
+  /* Accent stack */
+  --color-accent: var(--color-red);
+  --color-accent-1: #ee675b;
+  --color-accent-2: #fbd4d0;
+  --color-accent-dark: #d44c3f;
+  --color-accent-light: #f9ccc8;
+
+  /* Light blue stack */
+  --color-light-blue: #caeff2;
+  --color-light-blue-1: #dcf4f6;
+  --color-light-blue-2: #edf9fa;
+
+  /* Gray stack */
+  --color-gray: #505050;
+  --color-gray-1: #6a6a6a;
+  --color-gray-2: #7c7c7c;
+  --color-gray-3: #a8a8a8;
+  --color-gray-4: #b9b9b9;
+  --color-gray-5: #cbcbcb;
+  --color-gray-6: #d9d9d9;
+  --color-gray-7: #e5e5e5;
+  --color-gray-8: #efefef;
+  --color-gray-9: #f6f6f6;
+
+  /* Other colors */
+  --color-dark-blue: var(--color-primary-2);
+  --color-trial-blue: #708da9;
+  --color-gold: #bca890;
+
+  /* Text */
+  --color-text: var(--color-gray);
+  --color-text-light: var(--color-gray-7);
+  --color-text-medium: var(--color-gray-3);
+  --color-text-dark: var(--color-gray-2);
+
+  /* Backgrounds */
+  --color-background: var(--color-white);
+  --color-background-light: var(--color-gray-9);
+  --color-background-medium: var(--color-gray-8);
+  --color-background-dark: var(--color-gray-6);
+
+  /* Borders */
+  --color-border: var(--color-gray-7);
+  --color-border-medium: var(--color-gray-6);
+  --color-border-dark: var(--color-gray-5);
+
+  /* States */
+  --color-error: var(--color-accent-2);
+  --color-disabled: var(--color-gray-2);
+
+  /* @todo clean temp colors once design approves of them */
+  --color-dark-blue-new: #051a30;
+  --color-light-blue-new: #d7ecf7;
+  --color-light-blue-new-2: #8fc0e4;
+  --color-light-blue-home: #c0e3ef;
+  --color-light-blue-refresh: #a5cde9;
+
+  /* Notifications */
+  --color-notification-neutral: var(--color-gray-8);
+  --color-notification-text-neutral: #616161;
+  --color-notification-success: #ebedf5;
+  --color-notification-text-success: var(--color-primary);
+  --color-notification-error: #f2dede;
+  --color-notification-text-error: #b75c5c;
+}

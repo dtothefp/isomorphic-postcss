@@ -1,0 +1,76 @@
+{
+  "title": "Icons",
+  "description": "Icons included in the SVG spritesheet.",
+  "iconSections": [
+    {
+      "name": "Brand",
+      "icons": [
+        "logo",
+        "logo-mark"
+      ]
+    },
+    {
+      "name": "Flags",
+      "icons": [
+        "flag-austria",
+        "flag-canada",
+        "flag-france",
+        "flag-germany",
+        "flag-netherlands",
+        "flag-switzerland",
+        "flag-uk",
+        "flag-us"
+      ]
+    },
+    {
+      "name": "Social",
+      "icons": [
+        "social-facebook",
+        "social-instagram",
+        "social-linkedin",
+        "social-pinterest",
+        "social-snapchat",
+        "social-twitter",
+        "social-youtube"
+      ]
+    },
+    {
+      "name": "General",
+      "icons": [
+        "account",
+        "arrow",
+        "arrow-down",
+        "arrow-expand",
+        "arrow-prompt",
+        "bone",
+        "box",
+        "calendar-checkmark",
+        "calltext",
+        "cart",
+        "chat",
+        "checkmark",
+        "checkmark-2",
+        "checkmark-solo",
+        "close",
+        "close-thin",
+        "delivery-truck",
+        "dollar-sign",
+        "edit",
+        "free-shipping-star",
+        "line-wiggly",
+        "minus",
+        "moon",
+        "moon-with-star",
+        "payment-card",
+        "phone",
+        "play-button-outline",
+        "play-video",
+        "plus",
+        "plus-circle",
+        "truck-removal",
+        "whiteglove-icon-hand",
+        "x-circle"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "css-lib",
+  "version": "1.1.0",
+  "main": "lib/assets/base.css",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "fontfaceobserver": "^2.0.13",
+    "normalize.css": "^7.0.0"
+  }
+}

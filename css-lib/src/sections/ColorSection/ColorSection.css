@@ -1,0 +1,35 @@
+@import 'config/common.css';
+
+.title {
+  composes: section-title from 'components/sections.css';
+}
+
+.description {
+  composes: section-description from 'components/sections.css';
+}
+
+.intro-section {
+  composes: section from 'components/sections.css';
+}
+
+.swatch-section {
+  composes: section--example from 'components/sections.css';
+}
+
+.swatch-section-title {
+  composes: section-title--example from 'components/sections.css';
+}
+
+.swatch-row {
+  position: relative;
+  margin-left: calc(var(--size-4) * -1);
+  margin-right: calc(var(--size-4) * -1);
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media (--medium-up) {
+    display: flex;
+  }
+}

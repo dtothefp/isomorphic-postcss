@@ -1,0 +1,25 @@
+@import 'config/common.css';
+
+.container {
+  composes: page-section from 'helpers/layout.css';
+  background: var(--color-primary-2);
+}
+
+.nav-list {
+  @media (--small-up) {
+    margin-top: var(--size-10);
+  }
+}
+
+.nav-item {
+  margin-bottom: var(--size-7);
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.nav-link {
+  composes: heading-5 from 'helpers/typography.css';
+  color: var(--color-white);
+}

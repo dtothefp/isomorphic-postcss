@@ -1,0 +1,62 @@
+@import 'config/common.css';
+@import 'config/header.css';
+
+.container {
+  position: relative;
+}
+
+.cta-text {
+  composes: heading-4 from 'helpers/typography.css';
+}
+
+.play-button {
+  composes: button--ghost from 'helpers/buttons.css';
+  padding: 0;
+}
+
+.hero-padding-top {
+  @media (--large-up) {
+    padding-top: 55vw;
+    background: var(--color-background-light);
+  }
+
+  @media (min-width: 1175px) and (--landscape) {
+    padding-top: calc(93vh - var(--header-height));
+  }
+}
+
+.hero {
+  @media (--large-up) {
+    transition: 1s opacity;
+  }
+}
+
+.hero--hidden {
+  @media (--large-up) {
+    opacity: 0;
+  }
+}
+
+.content {
+  @media (--large-up) {
+    position: relative;
+    background: var(--color-background);
+  }
+}
+
+.mattress-feature {
+  composes: content;
+
+  @media (--large-up) {
+    transform: scale(0.9);
+    transform-origin: center top;
+  }
+}
+
+.mattress-feature--eu {
+  padding-bottom: var(--size-12);
+
+  @media (--mobile-down) {
+    padding-bottom: var(--size-7);
+  }
+}

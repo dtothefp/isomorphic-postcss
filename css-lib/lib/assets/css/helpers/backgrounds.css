@@ -1,0 +1,23 @@
+/**
+ * @overview Backgrounds helper classes
+ */
+
+@import 'config/common.css';
+
+.white-bottom {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--color-background);
+  }
+}
+
+.light-blue-white-bottom {
+  composes: white-bottom;
+  background: var(--color-light-blue-new);
+}

@@ -1,0 +1,27 @@
+@import 'config/common.css';
+
+.hash-links {
+
+  ol {
+    padding-left: 0;
+    margin-bottom: var(--size-6);
+    list-style-type: none;
+
+    li {
+      margin: var(--size-3) 0;
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.hash-links-numbered {
+  composes: hash-links;
+
+  ol {
+    padding-left: 1em;
+    list-style-type: decimal;
+  }
+}

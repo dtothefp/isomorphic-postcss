@@ -1,0 +1,23 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "node": "current"
+        },
+        "modules": "commonjs"
+      }
+    ],
+    "react"
+  ],
+  "plugins": [
+    "transform-object-rest-spread",
+    [
+      "css-modules-transform",
+      {
+        "generateScopedName": "[name]__[local]___[hash:base64:5]"
+      }
+    ]
+  ]
+}

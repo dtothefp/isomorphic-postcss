@@ -1,0 +1,61 @@
+@import 'config/common.css';
+
+.container {
+  background: var(--color-light-blue-new);
+
+  @media (--mobile-down) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.content {
+  composes: page-section-large from 'helpers/layout.css';
+  padding-bottom: 0;
+
+  @media (--mobile-down) {
+    order: 1;
+  }
+}
+
+.heading {
+  composes: heading-2 from 'helpers/typography.css';
+  composes: text-center-small-up from 'helpers/typography.css';
+}
+
+.body {
+  composes: body-1 from 'helpers/typography.css';
+  composes: text-center-small-up from 'helpers/typography.css';
+  max-width: 23em;
+
+  @media (--small-up) and (--medium-down) {
+    max-width: 26em;
+  }
+
+  @media (--large-up) {
+    max-width: 29em;
+  }
+
+  @media (--wide-up) {
+    font-size: var(--font-4);
+  }
+}
+
+.image-wrapper {
+  composes: white-bottom from 'helpers/backgrounds.css';
+
+  @media (--mobile-down) {
+    order: 2;
+  }
+}
+
+.image-container {
+  width: 90%;
+  margin-left: auto;
+
+  @media (--large-up) {
+    width: 80%;
+    max-width: 100rem;
+    padding-top: var(--size-11);
+  }
+}

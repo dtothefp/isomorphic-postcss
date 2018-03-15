@@ -1,0 +1,12 @@
+/*
+  Common variables for Stiftung-Warentest
+*/
+
+:root {
+  /* Letter Spacing */
+  --sw-tracking-1: 0.02em;
+  --sw-tracking-2: 0.08em;
+
+  /* Content Width */
+  --max-sw-content-width: 44rem;
+}

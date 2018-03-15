@@ -1,0 +1,58 @@
+@import 'config/common.css';
+
+.card-container {
+  position: relative;
+  width: 100%;
+  padding-right: var(--size-3);
+  padding-left: var(--size-3);
+  margin-bottom: var(--size-8);
+
+  @media (--large-up) {
+    display: flex;
+    padding-right: 0.875rem;
+    padding-left: 0.875rem;
+  }
+
+  @media (--medium-up) {
+    margin-bottom: 0;
+  }
+}
+
+.card {
+  composes: margin-auto from 'helpers/layout.css';
+  display: block;
+  border-radius: var(--radius-2);
+  background: var(--color-white);
+
+  @media (--medium-up) {
+    flex: 1;
+  }
+}
+
+.card--shadow {
+  border: 1px solid rgba(203, 203, 203, 0.15);
+  box-shadow: 0 0.125rem 0.625rem 0 rgba(203, 203, 203, 0.5);
+  transition: 0.22s ease-out;
+  transition-property: transform, box-shadow;
+
+  &:hover,
+  &:focus {
+    @media (--medium-up) {
+      box-shadow: 0 1.25rem 1.875rem 0 var(--color-border);
+      transform: translate3d(0, -0.1875rem, 0);
+    }
+  }
+}
+
+.card--minimal-shadow {
+  border: 1px var(--color-border) solid;
+  cursor: pointer;
+  transition: box-shadow 0.22s ease-out;
+
+  &:hover,
+  &:focus {
+    @media (--medium-up) {
+      box-shadow: 0 0.5rem 1rem 0 var(--color-border);
+    }
+  }
+}

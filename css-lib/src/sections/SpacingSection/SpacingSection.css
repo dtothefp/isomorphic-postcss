@@ -1,0 +1,26 @@
+@import 'config/common.css';
+
+.intro-section {
+  composes: section from 'components/sections.css';
+}
+
+.example-section {
+  composes: section--example from 'components/sections.css';
+}
+
+.title {
+  composes: section-title from 'components/sections.css';
+}
+
+.description {
+  composes: section-description from 'components/sections.css';
+}
+
+.blocks {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: var(--width-content-max);
+  margin: var(--size-9) -var(--size-5) -var(--size-7) 0;
+}

@@ -1,0 +1,91 @@
+@import 'config/common.css';
+
+.indicator {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  background: white;
+  border-radius: 120px;
+  background: var(--color-gray-9);
+  text-align: right;
+  line-height: 1;
+  padding-right: 30px;
+  padding-top: 30px;
+  transform: translate(40px, -40px);
+  box-shadow: 0 0 4px 0 rgba(191,191,191,0.50);
+  z-index: var(--z-index-subnav);
+  cursor: pointer;
+}
+
+.indicator-text {
+  text-align: center;
+}
+
+.label {
+  composes: heading-5 from 'helpers/typography.css';
+}
+
+.width {
+  composes: calibre-medium from 'helpers/fonts.css';
+  font-size: var(--font-1);
+  color: var(--color-text);
+}
+
+.size-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 190px;
+  text-align: center;
+  overflow: auto;
+  background: var(--color-gray-9);
+  z-index: var(--z-index-nav);
+  transform: translateX(100%);
+  transition: transform 300ms;
+}
+
+.size-menu--open {
+  transform: translateX(0);
+}
+
+.size-option {
+  position: relative;
+  padding: var(--size-4) 0;
+  cursor: pointer;
+  margin-top: -1px;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: var(--size-4);
+    right: var(--size-4);
+    height: 1px;
+    background: var(--color-gray-7);
+  }
+  
+  &:last-child:after {
+    display: none;
+  }
+  
+  &:hover {
+    background: var(--color-gray-7);
+  }
+}
+
+.size-option-label {
+  composes: heading-5 from 'helpers/typography.css';
+  margin-bottom: 0;
+}
+
+.size-option-range {
+  composes: calibre-medium from 'helpers/fonts.css';
+  font-size: var(--font-1);
+  color: var(--color-text);
+}

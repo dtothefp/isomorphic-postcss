@@ -1,0 +1,22 @@
+{
+  "title": "Logos",
+  "description": "The Casper wordmark and icon mark can be displayed in two colors, depending on the background.  The icon mark is used sparingly, as a secondary mark that is only used to support the full wordmark.",
+  "thumbnails": [
+    {
+      "filename": "logo-word-thumb-light.svg",
+      "border": "false"
+    },
+    {
+      "filename": "logo-word-thumb-dark.svg",
+      "border": "true"
+    },
+    {
+      "filename": "logo-icon-thumb-light.svg",
+      "border": "false"
+    },
+    {
+      "filename": "logo-icon-thumb-dark.svg",
+      "border": "true"
+    }
+  ]
+}

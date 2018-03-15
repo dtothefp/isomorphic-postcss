@@ -1,0 +1,40 @@
+@import 'helpers/buttons.css';
+@import 'helpers/inputs.css';
+
+.intro-section {
+  composes: section from 'components/sections.css';
+}
+
+.example-section {
+  composes: section--example from 'components/sections.css';
+}
+
+.title {
+  composes: section-title from 'components/sections.css';
+}
+
+.description {
+  composes: section-description from 'components/sections.css';
+}
+
+.example-section-title {
+  composes: section-title--example from 'components/sections.css';
+}
+
+.helper-label {
+  composes: helper-label from 'components/helper-label.css';
+}
+
+.disable-toggle {
+  margin-left: var(--size-5);
+}
+
+.example-tabs {
+  position: relative;
+  max-width: 20rem;
+  margin: auto;
+}
+
+.example-pane-content {
+  padding: var(--size-6) var(--size-6) var(--size-7);
+}

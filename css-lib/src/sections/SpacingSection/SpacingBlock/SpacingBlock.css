@@ -1,0 +1,88 @@
+@import 'config/common.css';
+
+.block {
+  width: calc(50% - var(--size-5));
+  margin-right: var(--size-5);
+  margin-bottom: var(--size-7);
+  border-bottom-style: solid;
+  border-bottom-color: var(--color-background-dark);
+
+  @media (--small) {
+    width: calc(100% / 3 - var(--size-5));
+  }
+
+  @media (--medium-up) {
+    width: calc(20% - var(--size-5));
+  }
+}
+
+.block--size-1 {
+  border-width: var(--size-1);
+}
+
+.block--size-2 {
+  border-width: var(--size-2);
+}
+
+.block--size-3 {
+  border-width: var(--size-3);
+}
+
+.block--size-4 {
+  border-width: var(--size-4);
+}
+
+.block--size-5 {
+  border-width: var(--size-5);
+}
+
+.block--size-6 {
+  border-width: var(--size-6);
+}
+
+.block--size-7 {
+  border-width: var(--size-7);
+}
+
+.block--size-8 {
+  border-width: var(--size-8);
+}
+
+.block--size-9 {
+  border-width: var(--size-9);
+}
+
+.block--size-10 {
+  border-width: var(--size-10);
+}
+
+.block--size-11 {
+  border-width: var(--size-11);
+}
+
+.block--size-12 {
+  border-width: var(--size-12);
+}
+
+.block--size-13 {
+  border-width: var(--size-13);
+}
+
+.block--size-14 {
+  border-width: var(--size-14);
+}
+
+.block--size-15 {
+  border-width: var(--size-15);
+}
+
+.size-variable {
+  composes: helper-label from 'components/helper-label.css';
+  margin-bottom: var(--size-2);
+  cursor: pointer;
+}
+
+.size-value {
+  margin-bottom: var(--size-4);
+  font-size: var(--font-1);
+}

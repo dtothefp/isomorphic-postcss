@@ -1,0 +1,13 @@
+/**
+ * @overview Web font variables
+ */
+
+:root {
+  /* Custom fonts */
+  --calibre-light: "Calibre Light";
+  --calibre-regular: "Calibre Regular";
+  --calibre-medium: "Calibre Medium";
+
+  /* Fallback fonts */
+  --sans-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

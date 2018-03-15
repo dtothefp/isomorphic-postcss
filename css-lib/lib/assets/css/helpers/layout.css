@@ -1,0 +1,89 @@
+/**
+ * @overview Layout and display helper classes
+ */
+
+@import 'config/common.css';
+
+/* Display helpers */
+
+.margin-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Page section helpers for modules/components */
+
+.gutters {
+  padding-right: var(--size-6);
+  padding-left: var(--size-6);
+
+  @media (--small) {
+    padding-right: var(--size-10);
+    padding-left: var(--size-10);
+  }
+
+  @media (--medium-up) {
+    padding-right: var(--size-11);
+    padding-left: var(--size-11);
+  }
+}
+
+.page-section {
+  composes: gutters;
+  padding-top: var(--size-11);
+  padding-bottom: var(--size-11);
+
+  @media (--small-up) {
+    padding-top: var(--size-12);
+    padding-bottom: var(--size-12);
+  }
+}
+
+.page-section-large {
+  composes: gutters;
+  padding-top: var(--size-12);
+  padding-bottom: var(--size-12);
+
+  @media (--medium) {
+    padding-top: var(--size-13);
+    padding-bottom: var(--size-13);
+  }
+
+  @media (--large) {
+    padding-top: var(--size-14);
+    padding-bottom: var(--size-14);
+  }
+
+  @media (--wide-up) {
+    padding-top: var(--size-15);
+    padding-bottom: var(--size-15);
+  }
+}
+
+.page-section-inset {
+  composes: margin-auto;
+
+  @media (--max) {
+    width: var(--width-container-max);
+  }
+}
+
+/* Accessible hiding for screen readers etc. */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}

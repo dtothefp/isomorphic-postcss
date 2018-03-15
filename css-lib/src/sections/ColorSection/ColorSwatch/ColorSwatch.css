@@ -1,0 +1,36 @@
+@import 'config/common.css';
+
+.swatch {
+  composes: example-card from 'components/sections.css';
+  margin: var(--size-4);
+  padding: var(--size-5);
+  cursor: pointer;
+  
+  @media (--medium-up) {
+    flex: 1;
+    
+    &:first-child {
+      flex-basis: calc(100% * 3 / 7);
+      flex-grow: 0;
+    }
+  }
+}
+
+.swatch--dark {
+  color: var(--color-white);
+}
+
+.color-name {
+  composes: calibre-medium from 'helpers/fonts.css';
+  font-size: var(--font-2);
+  margin-bottom: 0;
+}
+
+.color-hex {
+  composes: calibre-light from 'helpers/fonts.css';
+  font-size: var(--font-2);
+}
+
+.color-variable {
+  composes: helper-label from 'components/helper-label.css';
+}

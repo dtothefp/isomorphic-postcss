@@ -1,0 +1,49 @@
+@import 'config/common.css';
+@import 'helpers/typography.css';
+
+.intro-section {
+  composes: section from 'components/sections.css';
+}
+
+.thumbnails-section {
+  composes: section--example from 'components/sections.css';
+}
+
+.title {
+  composes: section-title from 'components/sections.css';
+}
+
+.description {
+  composes: section-description from 'components/sections.css';
+}
+
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(var(--size-5) * -1);
+  margin-right: calc(var(--size-5) * -1);
+}
+
+.thumbnail {
+  composes: example-card from 'components/sections.css';
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: calc(40%);
+  margin: var(--size-5);
+  background: var(--color-primary);
+  
+  @media (--small-down) {
+    flex-basis: 80%;
+  }
+}
+
+.thumbnail--border {
+  composes: thumbnail;
+  background: var(--color-white);
+}
+
+.thumbnail-img {
+  display: block;
+  width: 410px;
+  margin: auto;
+}

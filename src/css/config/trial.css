@@ -1,0 +1,11 @@
+/**
+ * @overview Hundred Night Trial config variables
+ */
+
+:root {
+  /* Transitions */
+  --trial-transition-background: background-color 0.5s linear;
+  --trial-transition-text: color 0.25s linear;
+  --trial-transition-border: border-color 0.25s linear;
+  --trial-transition-fill: fill 0.25s linear;
+}

@@ -1,0 +1,22 @@
+@import 'config/common.css';
+
+.container {
+  composes: page-section from 'helpers/layout.css';
+  background: var(--color-light-blue-new);
+}
+
+.title {
+  composes: heading-1 from 'helpers/typography.css';
+  color: var(--color-text);
+}
+
+.description {
+  composes: body-1 from 'helpers/typography.css';
+}
+
+.logo {
+  fill: var(--color-primary);
+  width: 90px;
+  height: 29px;
+  margin-bottom: var(--size-12);
+}

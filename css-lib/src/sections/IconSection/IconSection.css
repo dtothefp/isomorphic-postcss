@@ -1,0 +1,29 @@
+@import 'config/common.css';
+
+.intro-section {
+  composes: section from 'components/sections.css';
+}
+
+.example-section {
+  composes: section--example from 'components/sections.css';
+}
+
+.title {
+  composes: section-title from 'components/sections.css';
+}
+
+.example-section-title {
+  composes: section-title--example from 'components/sections.css';
+}
+
+.description {
+  composes: section-description from 'components/sections.css';
+}
+
+.icons-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -var(--size-5);
+  margin-right: -var(--size-5);
+}

@@ -1,0 +1,35 @@
+/**
+ * @overview Header helper classes
+ */
+
+@import 'config/common.css';
+@import 'config/header.css';
+
+.header-link {
+  composes: calibre-regular from 'helpers/fonts.css';
+  font-size: var(--header-link-font);
+  white-space: nowrap;
+  color: var(--color-text);
+  user-select: none;
+  transition: var(--transition-text);
+
+  @media (--medium-down) {
+    display: block;
+    padding: var(--size-5) 0;
+    margin-right: var(--size-5);
+    margin-left: var(--size-5);
+  }
+
+  @media (--large-up) {
+    color: var(--color-text-dark);
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}
+
+.header-icon {
+  position: relative;
+  margin-right: var(--size-3);
+}

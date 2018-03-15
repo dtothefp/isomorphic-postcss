@@ -1,0 +1,29 @@
+@import 'config/common.css';
+
+.container {
+  @media (--small-up) {
+    display: flex;
+    height: 100vh;
+  }
+}
+
+.main {
+  flex: 1;
+  overflow: auto;
+  
+  h1, h2, h3, h4, h5, p {
+    max-width: 50rem;
+    
+    @media (--max) {
+      max-width: 55rem;
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.sprite-container {
+  display: none;
+}

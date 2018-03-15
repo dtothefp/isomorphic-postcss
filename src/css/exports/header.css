@@ -1,0 +1,14 @@
+/**
+ * @overview Header and subnav exports for JS
+ */
+
+@import 'config/header.css';
+
+/* stylelint-disable */
+
+:export {
+  header-height: var(--header-height);
+  header-height-mobile: var(--header-height-mobile);
+  subnav-height: var(--subnav-height);
+  buybar-height: var(--buybar-height);
+}

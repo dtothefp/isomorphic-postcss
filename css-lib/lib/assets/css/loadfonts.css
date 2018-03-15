@@ -1,0 +1,31 @@
+/**
+ * @overview Load self-hosted web fonts with @font-face
+ * @see src/loadfonts.js
+ */
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: var(--calibre-light);
+  src:
+    url('https://casper.com/assets-spa/fonts/CalibreWeb-Light.woff2') format('woff2'),
+    url('https://casper.com/assets-spa/fonts/CalibreWeb-Light.woff') format('woff');
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: var(--calibre-regular);
+  src:
+    url('https://casper.com/assets-spa/fonts/CalibreWeb-Regular.woff2') format('woff2'),
+    url('https://casper.com/assets-spa/fonts/CalibreWeb-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: var(--calibre-medium);
+  src:
+    url('https://casper.com/assets-spa/fonts/CalibreWeb-Medium.woff2') format('woff2'),
+    url('https://casper.com/assets-spa/fonts/CalibreWeb-Medium.woff') format('woff');
+}

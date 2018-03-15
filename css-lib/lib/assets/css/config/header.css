@@ -1,0 +1,26 @@
+/**
+ * @overview Header and subnav config variables
+ */
+
+:root {
+  /* Nav and subnav heights */
+  --header-height: 3.125rem;
+  --header-height-mobile: 3rem;
+  --header-height-mobile-checkout: 2.25rem;
+  --subnav-height: 2.75rem;
+  --buybar-height: 5.625rem;
+  --buybar-height-mobile: 2.75rem;
+  --buybar-height-mobile-atc: 5.125rem;
+  --buybar-height-small-medium-atc: 5.5rem;
+
+  /* Subnav buy/shop button */
+  --subnav-buy-width: 7rem;
+  --subnav-buy-width-mobile: 4.75rem;
+
+  /* Header link custom font size */
+  --header-link-font: 1.0625rem;
+}
+
+/* Custom media queries */
+@custom-media --subnav-mobile (max-width: 413px);
+@custom-media --subnav-mobile-up (min-width: 414px);

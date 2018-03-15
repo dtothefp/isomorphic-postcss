@@ -1,0 +1,7 @@
+/**
+ * @overview Purchaser config variables
+ */
+
+/* Custom media queries */
+@custom-media --purchaser-mobile (max-width: 455px);
+@custom-media --purchaser-mobile-up (min-width: 456px);

@@ -1,0 +1,200 @@
+/**
+ * @overview Typography helper classes for headings, paragraphs etc.
+ */
+
+@import 'config/common.css';
+
+/* Headings */
+
+.heading-1 {
+  composes: calibre-light from 'helpers/fonts.css';
+  margin-bottom: var(--size-5);
+  font-size: var(--font-7);
+  line-height: 1.1;
+  letter-spacing: var(--tracking-1);
+  color: var(--color-primary);
+
+  @media (--medium-up) {
+    font-size: var(--font-8);
+  }
+}
+
+.heading-2 {
+  composes: calibre-light from 'helpers/fonts.css';
+  margin-bottom: var(--size-5);
+  font-size: var(--font-6);
+  line-height: 1.1;
+  letter-spacing: var(--tracking-1);
+  color: var(--color-primary);
+
+  @media (--medium-up) {
+    font-size: var(--font-7);
+  }
+}
+
+.heading-3 {
+  composes: calibre-regular from 'helpers/fonts.css';
+  margin-bottom: var(--size-5);
+  font-size: var(--font-4);
+  line-height: 1.1;
+  color: var(--color-primary);
+
+  @media (--medium-up) {
+    font-size: var(--font-5);
+  }
+}
+
+.heading-4 {
+  composes: calibre-regular from 'helpers/fonts.css';
+  margin-bottom: var(--size-4);
+  font-size: var(--font-2);
+  line-height: 1.1;
+  color: var(--color-primary);
+
+  @media (--medium-up) {
+    font-size: var(--font-3);
+  }
+}
+
+.heading-5 {
+  composes: calibre-regular from 'helpers/fonts.css';
+  margin-bottom: var(--size-3);
+  font-size: var(--font-1);
+  color: var(--color-primary);
+}
+
+/* Bold headings */
+
+.heading-1-bold {
+  composes: calibre-regular from 'helpers/fonts.css';
+  margin-bottom: var(--size-5);
+  font-size: var(--font-7);
+  line-height: 1.1;
+  letter-spacing: var(--tracking-1);
+  color: var(--color-primary);
+
+  @media (--medium-up) {
+    font-size: var(--font-8);
+  }
+}
+
+.heading-2-bold {
+  composes: calibre-regular from 'helpers/fonts.css';
+  margin-bottom: var(--size-5);
+  font-size: var(--font-6);
+  line-height: 1.1;
+  letter-spacing: var(--tracking-1);
+  color: var(--color-primary);
+
+  @media (--medium-up) {
+    font-size: var(--font-7);
+  }
+}
+
+.heading-1,
+.heading-2 {
+
+  em {
+    font-style: normal;
+    font-weight: 400;
+
+    [data-fonts-1="true"] & {
+      font-weight: 600; /* Fake regular weight until Calibre Regular is loaded */
+    }
+
+    [data-fonts-2="true"] & {
+      font-weight: 400;
+      font-family: var(--calibre-regular);
+    }
+  }
+}
+
+/* Body copy/paragraph helpers */
+
+.body-1 {
+  font-size: var(--font-2);
+
+  @media (--medium-up) {
+    font-size: var(--font-2);
+  }
+}
+
+.body-2 {
+  font-size: var(--font-2);
+
+  @media (--medium-up) {
+    font-size: var(--font-3);
+  }
+}
+
+/* Link helpers */
+
+.link {
+  padding-bottom: var(--size-1);
+  color: var(--color-primary);
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  transition: var(--transition-border);
+
+  &:hover {
+    border-bottom-color: var(--color-primary);
+  }
+}
+
+.link-underline {
+  padding-bottom: var(--size-1);
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-primary-faded);
+  cursor: pointer;
+  transition: var(--transition-border);
+
+  &:hover {
+    border-bottom-color: var(--color-primary);
+  }
+}
+
+.link-underline-gray {
+  padding-bottom: var(--size-1);
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border-medium);
+  cursor: pointer;
+  transition: var(--transition-border);
+
+  &:hover {
+    border-bottom-color: var(--color-text);
+  }
+}
+
+/* Type utility helpers */
+
+.text-center-small-up {
+  @media (--small-up) {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+}
+
+.text-center-medium-up {
+  @media (--medium-up) {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+}
+
+.text-center-small-medium {
+  @media (--small-up) and (--medium-down) {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+}
+
+.text-center-medium {
+  @media (--medium) {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+}
